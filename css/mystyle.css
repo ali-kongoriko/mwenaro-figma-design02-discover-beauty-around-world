@@ -1,118 +1,59 @@
 * {
-  margin: 0;
   border: 0;
-  box-sizing: border-box;
+  margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  background-color: #e5e5e5;
-  font-size: 16px;
-  font-family:
-    system-ui,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    Oxygen,
-    Ubuntu,
-    Cantarell,
-    "Open Sans",
-    "Helvetica Neue",
-    sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 1rem;
 }
 
-.wrapper {
-  max-width: 800px;
-  background-color: #fff;
-  margin-inline: auto;
-  padding: 2rem;
+img {
+  width: 100%;
+  max-height: 100%;
 }
 
-header {
+h1 {
+  font-size: 2rem;
+  font-weight: 300px;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+p {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+button {
+  background-color: #1f1f1f;
+  border-radius: 1rem;
+  color: #ffff;
+  cursor: pointer;
+  padding: 0.8rem 1.5rem;
+  margin-bottom: 1rem;
+}
+
+button:hover {
+  background-color: #ddd;
+}
+
+.header-images {
   display: flex;
-  justify-content: space-between;
-  height: 350px;
-
-  img {
-    width: 100%;
-    max-height: 100%;
-  }
-
-  .heros {
-    h1 {
-      font-size: 2rem;
-      font-weight: 300px;
-      margin-bottom: 16px;
-    }
-
-    p {
-      font-size: 1rem;
-      font-weight: 100px;
-      color: grey;
-      margin-bottom: 16px;
-    }
-  }
-
-  button {
-    background-color: black;
-    border-radius: 16px;
-    font-weight: 600px;
-    color: white;
-    font-size: 1rem;
-    font-weight: 300px;
-    cursor: pointer;
-    padding: 10px 20px;
-    width: fit-content;
-  }
-
-  button:hover {
-    opacity: 0.8;
-  }
-  div:nth-child(1) {
-    height: 90%;
-    padding-bottom: 4rem;
-    align-self: self-end;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  div:nth-child(2) {
-    height: 75%;
-  }
-
-  /* last image */
-  div:nth-child(3) {
-    height: 75%;
-    align-self: self-end;
-  }
+  flex-direction: column;
+  gap: 1rem;
 }
 
-header > div {
-  width: calc(96% / 3);
-  /* background-color: #fff; */
-
-  img {
-    max-width: 100%;
-  }
+h2 {
+  font-size: 1.6rem;
+  font-weight: 300px;
 }
 
 .image-list {
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-between;
-
-  h2 {
-    color: white;
-    font-weight: 200px;
-    font-size: 1.5rem;
-  }
-
-  img {
-    max-width: 100%;
-  }
-  .image-card {
-    width: calc(96% / 3);
-  }
+  flex-direction: column;
+  gap: 1rem;
 }
